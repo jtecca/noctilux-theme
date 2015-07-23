@@ -261,6 +261,12 @@ the \"Gen RGB\" column in noctilux-definitions.el to improve them further."
                       (diff-refine-change ((t (,@fg-blue ,@bg-back))))))))
              (diff-file-header ((t (,@bg-back))))
              (diff-header ((t (,@fg-base1 ,@bg-back))))
+             ;; avy
+             (avy-background-face ((t (,@fg-base02))))
+             (avy-lead-face ((t (,@fmt-revb ,@fg-base02 ,@bg-red))))
+             (avy-lead-face-0 ((t (,@fmt-revb ,@fg-base02 ,@bg-cyan))))
+             (avy-lead-face-1 ((t (,@fmt-revb ,@fg-base02 ,@bg-green))))
+             (avy-lead-face-2 ((t (,@fmt-revb ,@fg-base02 ,@bg-blue))))
              ;; IDO
              (ido-only-match ((t (,@fg-green))))
              (ido-subdir ((t (,@fg-blue))))

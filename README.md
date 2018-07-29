@@ -1,20 +1,13 @@
-Noctilux
+Svirfneblin
 ========
 
-A dark color theme for Emacs 24+ (using deftheme), inspired by the default dark theme in [Light Table](http://www.lighttable.com/) 0.4.0. This color theme is based off the definitions and format in sellout's awesome [emacs-color-theme-solarized](https://github.com/sellout/emacs-color-theme-solarized), providing support for a *lot* of modes.
-
-This is still pretty rough around the edges; I think some color tweaks are still needed, and pull requests are definitely welcome.
-
-Screenshot
-==========
-
-![Showing ido and some syntax highlighting](http://i.imgur.com/M3DPhCh.png)
+A dark color theme that blends noctilux-theme and some colors from Adwaita Dark to make a dark, dark gnome theme.
 
 Setup
 -----
 
-1. Add the directory containing `noctilux-definitions.el` and `noctilux-theme.el` to your `custom-theme-load-path` (e.g. `(add-to-list 'custom-theme-load-path "~/.emacs.d/lib/color-themes")`).
-2. Add `(load-theme 'noctilux t)` somewhere to your Emacs initialisation.
+1. Add the directory containing `svirfneblin-definitions.el` and `svirfneblin-theme.el` to your `custom-theme-load-path` (e.g. `(add-to-list 'custom-theme-load-path "~/.emacs.d/lib/color-themes")`).
+2. Add `(load-theme 'svirfneblin t)` somewhere to your Emacs initialisation.
 
 Prerequisites
 -------------

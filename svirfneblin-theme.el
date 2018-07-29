@@ -72,9 +72,9 @@ down in order to expand or compress the tonal range displayed."
   :group 'lt)
 
 (defcustom svirfneblin-broken-srgb (and (eq system-type 'darwin)
-                                     (eq window-system 'ns)
-                                     (not (when (boundp 'ns-use-srgb-colorspace)
-                                            ns-use-srgb-colorspace)))
+                                        (eq window-system 'ns)
+                                        (not (when (boundp 'ns-use-srgb-colorspace)
+                                               ns-use-srgb-colorspace)))
   "Emacs bug #8402 results in incorrect color handling on Macs. If this is t
 \(the default on Macs), Svirfneblin works around it with alternative colors.
 However, these colors are not totally portable, so you may be able to edit
@@ -87,7 +87,8 @@ the \"Gen RGB\" column in svirfneblin-definitions.el to improve them further."
 ;;        that Emacs seems to dislike
 (defvar svirfneblin-colors           ; ANSI(Svirfneblin terminal)
   ;; name     sRGB      Gen RGB   256       16              8
-  '((base03  "#1a1d1e" "#1a1d1e" "#1a1d1e" "brightblack"   "black")
+  '((base04  "#1a1d1e" "#1a1d1e" "#1a1d1e" "brightblack"   "black")
+    (base03  "#232729" "#232729" "#232729" "black"   "black")
     (base02  "#33393b" "#33393b" "#33393b" "black"         "black")
     (base01  "#5f5f5f" "#5f5f5f" "#5f5f5f" "brightgreen"   "green")
     (base00  "#999999" "#999999" "#999999" "brightyellow"  "yellow")
@@ -101,6 +102,7 @@ the \"Gen RGB\" column in svirfneblin-definitions.el to improve them further."
     (magenta "#FF1F69" "#FF1F69" "#FF1F69" "magenta"       "magenta")
     (violet  "#ccaaff" "#ccaaff" "#ccaaff" "brightmagenta" "magenta")
     (blue    "#aaccff" "#aaccff" "#aaccff" "blue"          "blue")
+    (blue2   "#215d9c" "#215d9c" "#215d9c" "blue2"         "blue2")
     (cyan    "#aadddd" "#aadddd" "#aadddd" "cyan"          "cyan")
     (white   "#ffffff" "#ffffff" "#ffffff" "white"          "white")
     (green   "#aaffaa" "#aaffaa" "#aaffaa" "green"         "green"))
@@ -137,6 +139,7 @@ the \"Gen RGB\" column in svirfneblin-definitions.el to improve them further."
                    (magenta     (find-color 'magenta))
                    (violet      (find-color 'violet))
                    (blue        (find-color 'blue))
+                   (blue2       (find-color 'blue2))
                    (cyan        (find-color 'cyan))
                    (white       (find-color 'white))
                    (green       (find-color 'green))
